@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>履歷</title>
+    <link rel="stylesheet" href="CSS.css">
+   
+</head>
+<body>
+    <div id="welcome-message">歡迎光臨！</div>
+    <div class="wrapper">
+       
+        <div class="resume">
+            <div class="resume-item">
+                <span class="a"><b>名字:</b></span> 
+                <span class="b">X承泰</span>
+             </div>
+            <div class="resume-item">
+                <span class="a"><b>性別:</b></span> 
+                <span class="b">男</span>
+            </div>
+            <div class="resume-item">
+                <span class="a"><b>生日:</b></span> 
+                <span class="b">20XX年X月X日</span>
+            </div>
+            <div class="resume-item">
+                <span class="a"><b>興趣:</b></span> 
+                <span class="b">觀賞影音活動</span>
+            </div>
+            <div class="resume-item">
+                <span class="a"><b>專長:</b></span> 
+                <span class="b">電腦使用</span>
+            </div>
+            <div class="resume-item">
+                <span class="a"><b>學歷:</b></span> 
+                <span class="b">亞XXX大學</span>
+            </div>
+            <div class="resume-item">
+                <span class="a"><b>工作經歷:</b></span> 
+                <span class="b">優XXX全認證</span>
+            </div>
+            <div class="resume-item">
+                <span class="a"><b>自傳:</b></span> 
+                <div class="b">這是一個練習HTML的履歷範本999999999999</div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="toggleCalculator()">計算機</button>
+            <button onclick="toggleCalculator()">點餐</button>
+            <button onclick="toggleCalculator()">匯率</button>
+            <button onclick="toggleCalculator()">新聞網站</button>
+        </div>
+    </div>
+    
+    <div class="calculator">
+        <div class="btn">
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="btn">
+            <br>
+            <input type="button" value="1" onclick="appendToDisplay('1')">
+            <input type="button" value="2" onclick="appendToDisplay('2')">
+            <input type="button" value="3" onclick="appendToDisplay('3')">
+            <input type="button" value="+" onclick="appendToDisplay('+')">
+            <br>
+        </div>
+        <div class="btn">
+            <input type="button" value="4" onclick="appendToDisplay('4')">
+            <input type="button" value="5" onclick="appendToDisplay('5')">
+            <input type="button" value="6" onclick="appendToDisplay('6')">
+            <input type="button" value="-" onclick="appendToDisplay('-')">
+            <br>
+        </div>
+        <div class="btn">
+            <input type="button" value="7" onclick="appendToDisplay('7')">
+            <input type="button" value="8" onclick="appendToDisplay('8')">
+            <input type="button" value="9" onclick="appendToDisplay('9')">
+            <input type="button" value="*" onclick="appendToDisplay('*')">
+            <br>
+        </div>
+        <div class="btn">    
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="0" onclick="appendToDisplay('0')">
+            <input type="button" value="=" onclick="calculate()">
+            <input type="button" value="/" onclick="appendToDisplay('/')">
+        </div>
+    </div>
+
+    <div id="d1"></div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
